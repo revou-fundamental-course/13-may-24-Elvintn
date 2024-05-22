@@ -1,0 +1,52 @@
+/* Ini CSS */
+
+.section-content {
+    background-color: chocolate;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.section-content>h3 {
+    margin: 0;
+}
+
+#switch-keliling {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    color: blue;
+}
+
+.formula-img {
+    text-align: center;
+}
+
+img{
+    height: 100px;
+}
+
+input {
+    width: 100%;
+    background-color: bisque;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 4px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+form>button {
+    padding: 10px;
+    background-color: bisque;
+    border: 1px solid chocolate;
+    margin: 10px;
+}
+
+#reset-btn {
+    background-color: burlywood;
+    color: white;
+}

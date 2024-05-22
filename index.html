@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+<!-- ini bagian pembuka -->
+</head>
+<body>
+    <header>
+        <center><h1>Welcome to My Vin Kaltik (kalkulator matematika)</h1></center>
+        <section>
+            <p><center>
+                Halo semua, selamat datang dikalkukator matematika saya
+            </center> 
+            </p>
+            <p><center>
+                Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+            </center>
+            </p>
+
+        </section>
+
+        <!-- ini title -->
+        <section>
+            <div class="section-content">
+                <h3>Segitiga</h3>
+            </div>
+
+            <button type="button" id="switch-keliling" onclick="hideOrShow ()"><u>Pindah ke Keliling dan Luas Segitiga</u></button>
+
+            <!-- konten atas luas segitiga -->
+            <section id="Luas-section">
+               <section>
+                <div class="section-content">
+                    <h2>Luas Segitiga</h2>
+                </div>
+
+                <div class="formula-img">
+                    <img 
+                    src="https://akupintar.id/documents/20143/0/VII-68.PNG/1a4df8a0-4c26-b408-96d4-4cdc886355e0?t=1542968948773">
+                </div>
+                <p>Rumus Luas Segitiga Yaitu: </p>
+                <p><b>L = 1/2 x a x t</b></p>
+                <p>Dimana: </p>
+                <p>L = Luas</p> 
+                <p>a = Panjang Alas</p>
+                <p>t = Tinggi</p>
+               </section>
+
+               <!-- pemisah konten -->
+                <hr />
+
+                <!-- konten bawah luas segitiga -->
+                <section>
+                    <header>
+                        <h2>Hitung Luas Segitiga</h2>
+                    </header>
+
+                    <form id="formSegitiga" onsubmit="return hitung(event)">
+                            <div>
+                                <label for="alas">Alas:</label>
+                                <input type="number" id="alas" name="alas" required>
+                            </div>
+                            <div>
+                                <label for="tinggi">Tinggi:</label>
+                                <input type="number" id="tinggi" name="tinggi" required>
+                            </div>
+                        <h2>Hasil:</h2>
+                         <p id="hasilLuas">Luas Segitiga: </p>
+                        <button type="submit">Hitung</button>
+                        <button type="button" onclick="resetForm()">Reset</button>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </header>
+    <script src="js/script.js"></script>
+
+     <!-- konten atas keliling segitiga -->
+     <section id="keliling-section" style="display: none;">
+        <section>
+         <div class="section-content">
+             <h2>Keliling Segitiga</h2>
+         </div>
+
+         <div class="formula-img">
+             <img 
+             src="https://media.baamboozle.com/uploads/images/55385/1618452200_4332.png">
+         </div>
+         <p>Rumus Keliling Segitiga Yaitu: </p>
+         <p><b>K = S1+S2+S3</b></p>
+         <p>Dimana: </p>
+            <p>K = Keliling</p> 
+            <p>S1 = Sisi A</p>
+            <p>S2 = Sisi B</p>
+            <p>S3 = Sisi C</p>
+        </section>
+
+        <!-- pemisah konten -->
+         <hr />
+
+         <!-- konten bawah Keliling segitiga -->
+         <section>
+             <header>
+                 <h2>Hitung Keliling Segitiga</h2>
+             </header>
+
+            <form id="formSegitigaKeliling" onsubmit="return hitungkeliling(event)">
+                <div>
+                    <label for="sisiA">Sisi A:</label>
+                    <input type="number" id="sisiA" name="sisiA" required>
+                </div>
+                <div>
+                    <label for="sisiB">Sisi B:</label>
+                    <input type="number" id="sisiB" name="sisiB" required>
+                </div>
+                <div>
+                     <label for="sisiC">Sisi C:</label>
+                     <input type="number" id="sisiC" name="sisiC" required>
+                </div>
+                <h2>Hasil:</h2>
+                <p id="hasilKeliling">Keliling Segitiga: </p>
+                <button type="submit">Hitung</button>
+                <button type="button" onclick="resetForm()">Reset</button>
+            </form>
+            
+         </section>
+     </section>
+ </section>
+</header>
+<script src="js/script.js"></script>
+</body>
+</html>
